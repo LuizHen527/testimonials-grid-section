@@ -183,8 +183,16 @@ main {
 
 @media (min-width: 900px) {
 
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
     main {
         grid-template-columns: repeat(4, 1fr);
+        margin-top: var(--spacing-300);
+        margin-bottom: var(--spacing-300);
     }
 
     main > div:nth-child(5) {
@@ -195,6 +203,15 @@ main {
     main > div:nth-child(4) {
         grid-column: 2 / span 2;
         grid-row: 2;
+    }
+
+    .text-preset-4 {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: .813rem;
+        line-height: 140%;
+        letter-spacing: 0;
+        font-weight: 500;
+        font-style: normal;
     }
 
 }
