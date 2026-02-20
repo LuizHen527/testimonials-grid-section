@@ -65,6 +65,22 @@
     color: var(--purple-50);
 }
 
+.text--grey-100 {
+    color: var(--grey-100);
+}
+
+.text--grey-200 {
+    color: var(--grey-200);
+}
+
+.text--grey-400 {
+    color: var(--grey-400);
+}
+
+.text--grey-500 {
+    color: var(--grey-500);
+}
+
 body {
     background-color: #F6F5F6;
 }
@@ -72,6 +88,9 @@ body {
 main {
     width: 80%;
     margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400);
 }
 
 .card {
@@ -80,10 +99,23 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-200);
+    box-shadow: rgba(72, 85, 106, .2) 40px 60px 50px ;
 }
 
 .card--purple {
     background-color: var(--purple-500);
+}
+
+.card--grey-500 {
+    background-color: var(--grey-500);
+}
+
+.card--white {
+    background-color: var(--white);
+}
+
+.card--dark-blue {
+    background-color: var(--dark-blue);
 }
 
 .user-pic {
